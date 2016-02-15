@@ -1,0 +1,9 @@
+#beemo {
+  display: none;
+}
+
+label {
+  box-sizing: border-box;;
+  width: 50px;
+  padding: 10px;
+}
