@@ -1,6 +1,7 @@
 // import dependencies
 var express = require('express');
 var bodyParser = require('body-parser');
+var path = require('path');
 
 // modules created by me
 var addHandler =  require('./routes/add');
@@ -19,6 +20,11 @@ app.use('/add', addHandler);
 app.use('/multiply', multiplyHandler);
 app.use('/divide', divideHandler);
 app.use('/subtract', subtractHandler);
+
+app.get('/*', function(req, res) {
+  var filePath = req.params[0] || 'views/index.html';
+  res.sendFile(path.join(__dirname, './public', filePath));
+});
 
 // start the server
 const port = process.env.PORT || 5000;
