@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title>calculator</title>
+
+    <!-- <link rel="stylesheet" href="styles/main.css"/> -->
+    <script src="vendors/jquery.min.js"></script>
+    <script src="scripts/app.js"></script>
+  </head>
+  <body>
+    <form>
+      <input type="number" name="x"/>
+      <input type="number" name="y"/>
+
+      <div>
+        <label for="add">Add</label>
+        <input id="add" type="radio" name="operation" value="add"/>
+      </div>
+
+      <div>
+        <label for="subtract">Subtract</label>
+        <input id="subtract" type="radio" name="operation" value="subtract"/>
+      </div>
+
+      <div>
+        <label for="multiply">Multiply</label>
+        <input id="multiply" type="radio" name="operation" value="multiply"/>
+      </div>
+
+      <div>
+        <label for="divide">Divide</label>
+        <input id="divide" type="radio" name="operation" value="divide"/>
+      </div>
+
+      <input type="submit"/>
+      <input id="clear" type="button" value="clear"/> 
+    </form>
+
+    <h1></h1>
+  </body>
+</html>
