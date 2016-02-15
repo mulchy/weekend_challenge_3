@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <script src="vendors/jquery.min.js"></script>
+        <script src="scripts/app.js"></script>
+    </head>
+    <body>
+        <h1>Calculate stuff</h1>
+        <form id="my-form">
+          <input type="number" name="x"/>
+          <input type="number" name="y"/>
+          <div>
+            <input id="add" type="radio" name="operation" value="add"/>
+            <label for="add">+</label>
+          </div>
+
+          <div>
+            <input id="sub" type="radio" name="operation" value="sub"/>
+            <label for="sub">-</label>
+          </div>
+
+          <div>
+            <input type="radio" name="operation" value="mult"/>
+            <label for="mult">*</label>
+          </div>
+
+          <div>
+            <input type="radio" name="operation" value="div"/>
+            <label for="div">/</label>
+          </div>
+
+          <input type="submit"/>
+          <input type="button" id="clear" value="Clear"></button>
+        </form>
+        <h3 id=answer></h3>
+        <img id="beemo" src="images/beemo.gif"/>
+    </body>
+</html>
